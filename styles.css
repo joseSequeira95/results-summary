@@ -91,16 +91,19 @@ section{
 
 #your-results span.show-result{
     color: #fff;
-    font-weight: 800;
-    font-size: 18px; 
+    font-size: 72px; 
     line-height: 72px;
     text-align: center;
+    font-weight: 800;
+    
 }
 
 #your-results div.out-of-hundred{
+    display: grid;
+    place-content:center;
     font-size: 18px;
     font-weight: 700;
-    line-height: 23.45px;
+    line-height: 86.45px;
     color: #cac9ff;
     text-align: center;
     width: 200px;
@@ -146,7 +149,7 @@ section{
     line-height: 23px;
     text-align: center;
     color: #cac9ff;
-    margin: 30px 60px 60px 60px;
+    margin: 12px 60px 60px 60px;
 
 }
 #summary-container{
@@ -159,8 +162,8 @@ section{
     background-color: transparent !important;
     height: 20px;
     width: 20px;
-    margin-left: 20px;
-    margin-right: 16px;
+    margin-left: 5px;
+    margin-right: 8px;
 }
 #summary-container h2{
     color: #303b59;
@@ -174,17 +177,19 @@ section{
 }
 
 #summary-container ul :first-child{
-    height: 56px;
     background-color:#fff6f6;
-    color: #ff5555;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 23px;
 }
 
+#summary-container ul :first-child h3{
+    color: #ff5555;
+}
+
 #summary-container ul :nth-child(2){
-    height: 56px;
+  
     background-color:#fffbf4;
     color: #ffb21e;
     font-style: normal;
@@ -194,7 +199,7 @@ section{
 }
 
 #summary-container ul :nth-child(3){
-    height: 56px;
+    
     background-color:#f2fcf9;
     color: #00bb8f;
     font-style: normal;
@@ -204,7 +209,7 @@ section{
 }
 
 #summary-container ul :nth-child(4){
-    height: 56px;
+   
     background-color:#f2fcf9;
     color: #1125d6;
     font-style: normal;
@@ -214,7 +219,7 @@ section{
 }
 
 #summary-container ul :nth-child(4){
-    height: 56px;
+  
     background-color: #f3f4fd;
     font-style: normal;
     font-weight: 500;
@@ -235,13 +240,24 @@ section{
     border:none;
     color: #fff;
 
+
+}
+
+.flex-group{
+    display: flex;
+}
+
+.grid-flow{
+    display: grid;
+    align-content: start;
+    gap: 1rem;
 }
 
 #summary-container li{
-    margin-bottom: 16px;
     border-radius: 12px;
+    padding: 1rem;
     display: flex;
-    align-items: center;
+    justify-content:space-between;
 }
 
 #summary-container li p{
@@ -292,4 +308,5 @@ section{
     #summary-container{
         max-width: unset;
     }
+
 }
